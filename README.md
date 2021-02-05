@@ -28,23 +28,14 @@ accordingly. gettimeofday is called before the parallel computations begin and a
 are completed. The time difference and the speedup are then calculated, and the results of the
 parallel run are printed to stdout.
 	
-preprocessing.py
+isPrime.cpp
 
-	Clean data to remove punctuation, numbers, white spaces and convert the text to lower case
+	Function prototype: bool isPrime( long long n, long long lo, long long hi );
 	
-k_means.py
-
-	Tokenize and Stem Data using NLTK
-	Convert words to Vector Space using TFIDF matrix
-	Calculate Cosine Similarity and generate the distance matrix
-	Generate Clusters using KMeans clustering algorithm
-	Dimensionality reduction using MDS
-	Visualization of clusters using matplotlib
+isPrime takes the number n which we are checking to the primality of, lo which is the low
+(inclusive) range of possible factors to check, and hi which is the high (exclusive) range of
+possible factors to check. The general algorithm is that it will iterate through each factor from lo
+to hi (inclusive of lo, but exclusive of hi), and returning false if any factors evenly divide into n. If
+you make it through the range of factors without returning false, then return true
 	
-hierarchical.py
 
-	Tokenize and Stem Data using NLTK
-	Convert words to Vector Space using TFIDF matrix
-	Calculate Cosine Similarity and generate the distance matrix
-	Hierarchical clustering using Ward Method
-	Visualization of clusters using matplotlib
