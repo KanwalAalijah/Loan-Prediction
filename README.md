@@ -5,7 +5,7 @@ Determine whether a large number is prime or not, both in parallel over many thr
 
 Table of Contents 
 ---------------------------
-main.cpp
+**main.cpp**
 
 	Function prototype: int main( int argc, char *argv[] );
 The driver of the program. For each number entered on the command line, main calls
@@ -28,7 +28,7 @@ accordingly. gettimeofday is called before the parallel computations begin and a
 are completed. The time difference and the speedup are then calculated, and the results of the
 parallel run are printed to stdout.
 	
-isPrime.cpp
+**isPrime.cpp**
 
 	Function prototype: bool isPrime( long long n, long long lo, long long hi );
 	
